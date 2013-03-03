@@ -11,7 +11,6 @@ sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist
 sudo rm /Library/LaunchDaemons/org.jenkins-ci.plist
 sudo rm -rf /Applications/Jenkins "/Library/Application Support/Jenkins" /Library/Documentation/Jenkins
 sudo rm -rf /Users/Shared/Jenkins
-sudo rm -rf /var/log/jenkins
 sudo dscl . -delete /Users/jenkins
 sudo dscl . -delete /Groups/jenkins
 pkgutil --pkgs | grep 'org\.jenkins-ci\.' | xargs -n 1 sudo pkgutil --forget
